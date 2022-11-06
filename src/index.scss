@@ -18,3 +18,22 @@
   padding: 2rem;
   text-align: center;
 }
+
+.my-icon {
+  @apply w-8 h-8;
+  font-size: 32px;
+
+  &.large {
+    @apply w-12 h-12;
+    font-size: 48px;
+  }
+
+  &.x-large {
+    @apply w-14 h-14;
+    font-size: 56px;
+  }
+
+  &.left {
+    @apply mr-1
+  }
+}

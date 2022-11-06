@@ -17,12 +17,13 @@
     "react-hooks"
   ],
   "rules": {
-    "@typescript-eslint/consistent-type-imports": [
-      "error",
-      {
-        "prefer": "type-imports"
-      }
-    ],
+    //    "@typescript-eslint/consistent-type-imports": [
+    //      "error",
+    //      {
+    //        "prefer": "type-imports"
+    //      }
+    //    ],
+    "@typescript-eslint/consistent-type-imports": "off",
     "react/react-in-jsx-scope": "off",
     "react/jsx-filename-extension": [
       "error",
@@ -34,6 +35,7 @@
       }
     ],
     "react/jsx-no-target-blank": "off",
+    "react/jsx-no-undef": "off",
     "react/self-closing-comp": [
       "error",
       {
