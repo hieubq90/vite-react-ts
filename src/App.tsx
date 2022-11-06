@@ -1,15 +1,32 @@
-import type { FC } from 'react'
+import { HashRouter, Route, Routes } from 'react-router-dom'
+import Footer from './components/Footer'
+import NavBar from './components/NavBar'
+import Challenge from './pages/Challenge'
+import Home from './pages/Home'
+import News from './pages/News'
+import NotFound from './pages/NotFound'
 
-import './App.css'
+export function App() {
+  return (
+    <div className="app">
+      <NavBar />
+      <div className="app-content">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/challenge" element={<Challenge />} />
+          <Route path="/news" element={<News />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </div>
+      <Footer />
+    </div>
+  )
+}
 
-const App: FC = () => (
-  <div className="gradient-card ">
-    <h1 className="text-3xl font-bold text-bubble-gum">Hello world!</h1>
-    <button className="bg-sky-700 px-4 py-2 text-white hover:bg-sky-800 sm:px-8 sm:py-3">
-      <MyIconsKnife />
-      <MyIconsCup />
-    </button>
-  </div>
-)
-
-export default App
+export default function WrappedApp() {
+  return (
+    <HashRouter>
+      <App />
+    </HashRouter>
+  )
+}

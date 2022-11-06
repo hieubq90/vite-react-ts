@@ -1,4 +1,4 @@
-// import { promises as fs } from 'fs'
+import * as path from 'path'
 import react from '@vitejs/plugin-react'
 // loader helpers
 import AutoImport from 'unplugin-auto-import/vite'
@@ -49,4 +49,13 @@ export default defineConfig({
       jsx: 'react',
     }),
   ],
+  resolve: {
+    alias: [
+      { find: '~', replacement: path.resolve(__dirname, 'src') },
+      {
+        find: '@',
+        replacement: path.resolve(__dirname, 'src'),
+      },
+    ],
+  },
 })
