@@ -1,0 +1,23 @@
+.achievementBox {
+  width: 540px;
+  height: 316px;
+
+  @apply flex flex-row items-center justify-center text-light text-lg font-inter font-normal;
+
+  .stats {
+    text-shadow: 0px 0px 6px #FC7400;
+
+    span {
+      line-height: 22px;
+    }
+  }
+
+  .percent {
+    @apply ml-1;
+    
+    margin-bottom: 1px;
+    font-size: 25px;
+    line-height: 30px;
+    text-shadow: 0px 0px 6px #FCA500;
+  }
+}

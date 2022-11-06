@@ -1,0 +1,10 @@
+.mealCard {
+  @apply w-full bg-dark-600 bg-center bg-cover bg-no-repeat flex flex-row items-end justify-start;
+  height: 234px;
+
+  .label {
+    @apply bg-primary-300 h-8 text-light font-inter flex items-center justify-center;
+
+    width: 120px;
+  }
+}

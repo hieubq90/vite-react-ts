@@ -1,0 +1,13 @@
+.hexButton {
+  @apply bg-gradient-to-r from-primary-300 to-primary-400;
+  @apply mx-10 flex flex-col items-center justify-center text-light;
+
+  height: 136px;
+  width: 136px;
+  -webkit-clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+  clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+
+  span {
+    @apply text-xl;
+  }
+}

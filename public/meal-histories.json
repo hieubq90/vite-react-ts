@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "meal": "Morning",
+    "day": "11-05",
+    "src": "/m01-min.jpg"
+  },
+  {
+    "id": 2,
+    "meal": "Lunch",
+    "day": "11-05",
+    "src": "/l03-min.jpg"
+  },
+  {
+    "id": 3,
+    "meal": "Dinner",
+    "day": "11.05",
+    "src": "/d01-min.jpg"
+  },
+  {
+    "id": 4,
+    "meal": "Snack",
+    "day": "11.05",
+    "src": "/l01-min.jpg"
+  },
+  {
+    "id": 5,
+    "meal": "Morning",
+    "day": "11.06",
+    "src": "/m01-min.jpg"
+  },
+  {
+    "id": 6,
+    "meal": "Lunch",
+    "day": "11.06",
+    "src": "/l02-min.jpg"
+  },
+  {
+    "id": 7,
+    "meal": "Dinner",
+    "day": "11.06",
+    "src": "/d02-min.jpg"
+  },
+  {
+    "id": 8,
+    "meal": "Snack",
+    "day": "11.06",
+    "src": "/s01-min.jpg"
+  }
+]
