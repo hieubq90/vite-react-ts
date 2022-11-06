@@ -14,7 +14,7 @@
 }
 
 .navLink {
-  @apply w-40 flex flex-row items-center text-white font-noto;
+  @apply w-40 flex flex-row items-center text-white font-noto font-light;
 
   svg {
     @apply mr-2;

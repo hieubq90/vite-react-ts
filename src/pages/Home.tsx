@@ -36,17 +36,16 @@ export default function Home() {
           <span>Snack</span>
         </HexagonButton>
       </div>
-      <div
-        className="my-4 grid grid-cols-4 gap-2"
-        style={{ paddingLeft: 150, paddingRight: 150 }}
-      >
+      <div className="my-4 px-40 grid grid-cols-4 gap-2">
         {meals.map((meal) => (
           <MealCard key={meal.id} meal={meal} />
         ))}
       </div>
       <div className="mt-6 mb-16 flex flex-row items-center justify-center">
         <button className="gradient-to-bottom w-72 h-14 py-3 rounded hover:opacity-70">
-          <span className=" text-lg text-light">記録をもっと見る</span>
+          <span className=" text-lg text-light font-light">
+            記録をもっと見る
+          </span>
         </button>
       </div>
     </div>

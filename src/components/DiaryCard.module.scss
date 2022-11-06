@@ -1,0 +1,25 @@
+.diaryCard {
+  @apply p-4 bg-light text-dark-500 border border-gray-400;
+
+  height: 231px;
+
+  .time {
+    @apply mb-2 text-left text-lg font-inter font-normal;
+
+    max-width: 140px;
+    line-height: 22px;
+  }
+
+  .content {
+    @apply text-xs text-left font-light;
+
+    max-width: 200px;
+    max-height: 132px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    line-height: 17px;
+  }
+}

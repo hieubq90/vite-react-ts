@@ -1,0 +1,39 @@
+.bodyRecordChart {
+  @apply w-full bg-dark-500 px-6 py-4 flex flex-col justify-between;
+
+  min-height: 304px;
+
+  .header {
+    @apply flex flex-row;
+
+    .label {
+      @apply text-left text-light font-inter font-normal;
+
+      max-width: 96px;
+      font-size: 15px;
+      line-height: 18px;
+    }
+
+    .currentDay {
+      @apply text-left text-light font-inter font-normal;
+
+      font-size: 22px;
+      line-height: 27px;
+    }
+  }
+
+  .footer {
+    @apply flex flex-row items-center justify-start;
+    font-size: 15px;
+
+    .button {
+      @apply w-14 h-6 mx-2 bg-light rounded-xl text-primary-300 font-noto hover:opacity-80;
+    }
+
+    .buttonActive {
+      @apply w-14 h-6 mx-2 bg-primary-300 rounded-xl text-light font-noto hover:opacity-80;
+    }
+  }
+
+
+}
