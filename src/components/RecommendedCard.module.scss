@@ -1,0 +1,16 @@
+.recommendedCard {
+  @apply px-2 w-full h-36 bg-dark-600 flex flex-col items-center justify-center;
+
+  .label {
+    @apply font-normal font-inter text-primary-300;
+
+    font-size: 22px;
+    line-height: 27px;
+  }
+
+  .desc {
+    @apply text-center text-lg text-light font-noto font-light;
+
+    line-height: 26px;
+  }
+}

@@ -14,10 +14,19 @@
 }
 
 .navLink {
-  @apply w-40 flex flex-row items-center text-white font-noto font-light;
+  @apply relative w-40 flex flex-row items-center text-white font-noto font-light;
 
   svg {
     @apply mr-2;
+  }
+
+  .badge {
+    @apply absolute w-4 h-6 bg-primary-500;
+    @apply font-inter font-normal text-light;
+
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
   }
 
   &:hover {

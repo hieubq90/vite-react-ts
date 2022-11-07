@@ -1,4 +1,4 @@
-import { CSSProperties, forwardRef } from 'react'
+import React, { CSSProperties, forwardRef } from 'react'
 import {
   NavLink as BaseNavLink,
   NavLinkProps as BaseNavLinkProps,
@@ -9,6 +9,7 @@ import styles from './NavBar.module.scss'
 interface NavLinkProps extends BaseNavLinkProps {
   activeClassName?: string
   activeStyle?: CSSProperties
+  children?: React.ReactNode
 }
 
 const NavLink = forwardRef<HTMLAnchorElement, NavLinkProps>(
@@ -28,7 +29,9 @@ const NavLink = forwardRef<HTMLAnchorElement, NavLinkProps>(
         ...props.style,
         ...(isActive ? activeStyle : null),
       })}
-    />
+    >
+      {props.children}
+    </BaseNavLink>
   )
 )
 
